@@ -1,14 +1,285 @@
+/* ########### Defaults ############## */
+nav, header, footer {
+    display: block;
+}
 
-.rectangle {
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+.box-container1 {
     width: 100%;
-    height: 20%;
-    background-color: transparent;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.box-container2 {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.box-container3 {
+    width: 100%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row1::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.row2::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.row3::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 { width: 8.33%;}
+.col-2 { width: 16.66%;}
+.col-3 { width: 25%;}
+.col-4 { width: 33.33%;}
+.col-5 { width: 41.66%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.33%;}
+.col-8 { width: 66.66%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83.33%;}
+.col-11 { width: 91.66%;}
+.col-12 { width: 100%;}
+
+.box {
+    width: 90px;
+    padding: 100px;
+    margin: 20px;	
+    background-image: url(guiter.jpg);
+    background-size: 500px;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 50px;
+  }
+
+
+/* ############# Nav bar ##################### */
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav, ul {
+    background-color: transparent;  
     background-image: linear-gradient(180deg, #4F0776 0%, #3B135D 100%);
-
+    overflow: hidden;
 }
 
-.brief {
-    width: 100%;
-    height: 10px;
+nav .topnav li {
+    list-style: none;
+    float: left;
+}
+
+.navImg {
+    height:40px;
+    width: 90px;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 12px;
+    text-align: center;
+    padding: 19px 20px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    color: white;
+}
+
+.topnav-content{
+    padding-left: 17%;
+}
+
+.btn {
+    border: none;
+    padding: 7.59375px 22.7812px;
+    border-radius: 10px 10px;
+    margin: 9px;
     background-color: white;
+    transition: color 0.3s;
 }
+
+.btnlink{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.banner {
+    margin-top: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+#btn-Hover a:hover{
+    background-color: black;
+    color: white;
+}
+
+#btn-Hover2 {
+    background-color: transparent;
+    color: white;
+}
+
+.btn2 {
+    background-color: transparent;
+}
+
+/* ############ Custom styles ##################### */
+h2.firstSection {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+
+p .firstSection-paragraph1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14.4px;
+    margin: 14.4px 0px 24px;
+    text-transform: uppercase;
+}
+
+.firstSection-body {
+    margin-bottom: 20px;
+}
+
+.textContainer {
+    margin-left: 10%;
+}
+
+.btn-more {
+    padding: 10.59375px 50.7812px;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    font-weight: 50px;
+}
+
+.iframeContent {
+    border-radius: 5%;
+}
+
+.headerBox {
+    width: 100%;
+    text-align: center;
+
+}
+
+.headerBox-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.box1 {
+    width: 700px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    margin: 100px;	
+    background-image: url(guiter.jpg);
+    background-size: 800px;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 50px;
+  }
+
+  .box2 {
+    width: 90px;
+    padding: 100px 100px;
+    margin: 10px;	
+    background-image: url(guiter.jpg);
+    background-size: 500px;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 50px;
+  }
+
+  .box3 {
+    width: 350px;
+    padding-top: 200px;
+    padding-top: 200px;
+    margin: 10px;	
+    background-image: url(guiter.jpg);
+    background-size: 500px;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 50px;
+  }
+
+  .theLast {
+    background-color: transparent;  
+    background-image: linear-gradient(180deg, #4F0776 0%, #3B135D 100%);
+    
+  }
+
+  .headerColor1 {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .paragraph {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+  }
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row3::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
